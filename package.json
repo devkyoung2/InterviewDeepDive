@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:client": "pnpm --prefix client run dev",
+    "dev:server": "pnpm --prefix server run dev",
+    "dev": "concurrently \"pnpm dev:client\" \"pnpm dev:server\""
+  },
   "devDependencies": {
     "@types/node": "^22.5.0",
     "@types/react": "^18.3.4",
