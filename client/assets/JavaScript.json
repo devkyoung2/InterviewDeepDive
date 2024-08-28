@@ -22,7 +22,7 @@
   },
   "13": { "question": "단축평가", "sort": "JavaScript" },
   "14": {
-    "question": "Promise란 무엇이며, async/await과 어떻게 다른지, 왜 async/await이 등장했는지? Promise나 async/await를 es5로 트랜스파일하면 어떻게 되나요?",
+    "question": "Promise란 무엇이며, async/await과 어떻게 다른지, 왜 async/await이 등장했는지?\n Promise나 async/await를 es5로 트랜스파일하면 어떻게 되나요?",
     "sort": "JavaScript"
   },
   "15": { "question": "클로저(Closure)란 무엇인가요?", "sort": "JavaScript" },
@@ -40,7 +40,7 @@
     "sort": "JavaScript"
   },
   "20": {
-    "question": "`apply`, `call`, `bind`의 차이는 무엇인가요?`bind`를 `apply`, `call`로 어떻게 구현할 수 있을까요? 구현해보세요.",
+    "question": "`apply`, `call`, `bind`의 차이는 무엇인가요?`\n bind`를 `apply`, `call`로 어떻게 구현할 수 있을까요? 구현해보세요.",
     "sort": "JavaScript"
   },
   "21": {
