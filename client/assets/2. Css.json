@@ -1,0 +1,41 @@
+{
+  "1": { "question": "position 속성에 대해 설명해주세요.", "sort": "Css" },
+  "2": { "question": "display 속성에 대해 설명해주세요.", "sort": "Css" },
+  "3": { "question": "box model이란?", "sort": "Css" },
+  "4": { "question": "`box-sizing`에 대해 설명해주세요.", "sort": "Css" },
+  "5": {
+    "question": "마진 상쇄(margin Collapsing)가 왜 일어나는지, 해결방법?",
+    "sort": "Css"
+  },
+  "6": {
+    "question": "reset.css/normalize.css에 대해 설명해주세요.",
+    "sort": "Css"
+  },
+  "7": { "question": "sass, css module, css in js 차이점", "sort": "Css" },
+  "8": {
+    "question": "이미지를 img src 태그로 만드는 것과 요소의 background로 만들었을 때의 차이점",
+    "sort": "Css"
+  },
+  "9": {
+    "question": "`visibility: hidden`과 `display: none`의 차이점",
+    "sort": "Css"
+  },
+  "10": { "question": "반응형 웹의 3요소", "sort": "Css" },
+  "11": {
+    "question": "미디어 쿼리의 동작 방식과 좋은 예시를 들어주세요.",
+    "sort": "Css"
+  },
+  "12": {
+    "question": "CSS에서 사용되는 단위들에 대해 설명해주세요.",
+    "sort": "Css"
+  },
+  "13": {
+    "question": "선택자의 우선순위에 대해 설명해주세요.",
+    "sort": "Css"
+  },
+  "14": {
+    "question": "CSS에서 변수(커스텀 프로퍼티)를 사용하는 이유는 무엇인가요?",
+    "sort": "Css"
+  },
+  "15": { "question": "쌓임 맥락(Stacking Context)이란?", "sort": "Css" }
+}

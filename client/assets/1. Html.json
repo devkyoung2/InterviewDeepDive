@@ -1,0 +1,64 @@
+{
+  "1": { "question": "DOCTYPE에 대해 설명해주세요", "sort": "Html" },
+  "2": { "question": "표준모드와 호환모드?", "sort": "Html" },
+  "3": { "question": "meta 태그에 대해 설명해주세요", "sort": "Html" },
+  "4": { "question": "시맨틱 태그에 대해 설명해주세요", "sort": "Html" },
+  "5": { "question": "script 태그의 위치", "sort": "Html" },
+  "6": {
+    "question": "HTML 요소의 ‘속성(Attribute)’과 ‘프로퍼티(property)’의 차이점",
+    "sort": "Html"
+  },
+  "7": {
+    "question": "`<head>`와 `<body>`의 역할 및 차이점",
+    "sort": "Html"
+  },
+  "8": {
+    "question": "`<img>` 태그의 `alt` 속성을 사용하는 이유?",
+    "sort": "Html"
+  },
+  "9": {
+    "question": "`<img>` 태그의 `srcset` 속성을 사용하는 이유?",
+    "sort": "Html"
+  },
+  "10": {
+    "question": "`<a>`, `<link>`, `<area>`, `<form>` 태그의 `rel` 속성을 사용하는 이유?",
+    "sort": "Html"
+  },
+  "11": {
+    "question": "`async`, `defer` 속성에 대해 설명해주세요",
+    "sort": "Html"
+  },
+  "12": {
+    "question": "HTML5의 `<canvas>`와 `<svg>`의 차이점은 무엇이며, 각각 어떤 시나리오에서 사용하는 것이 가장 적합한가요?",
+    "sort": "Html"
+  },
+  "13": { "question": "`data-` 속성에 대해 설명해주세요", "sort": "Html" },
+  "14": {
+    "question": "HTML 문서에서 다국어 지원을 위한 실천 방법은 무엇인가요?",
+    "sort": "Html"
+  },
+  "15": {
+    "question": "HTML에서 ‘블록 요소’와 ‘인라인 요소’의 차이점은 무엇인가요?",
+    "sort": "Html"
+  },
+  "16": {
+    "question": "HTML에서 `<iframe>` 태그의 역할은 무엇인가요?",
+    "sort": "Html"
+  },
+  "17": {
+    "question": "HTML5에서 `<audio>` 및 `<video>` 태그를 사용하는 방법은?",
+    "sort": "Html"
+  },
+  "18": {
+    "question": "HTML5에서 마이크로데이터(Microdata)란 무엇이며, 어떻게 사용하나요?",
+    "sort": "Html"
+  },
+  "19": {
+    "question": "HTML의 폼(form) 요소에서 `<fieldset>`과 `<legend>`의 역할은 무엇인가요?",
+    "sort": "Html"
+  },
+  "20": {
+    "question": "`<progress>`와 `<meter>` 태그의 차이점은 무엇인가요?",
+    "sort": "Html"
+  }
+}
