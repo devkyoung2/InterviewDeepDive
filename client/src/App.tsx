@@ -13,6 +13,7 @@ type TQuestion = {
 const App = () => {
   const [question, setQuestion] = useState<string>('버튼을 눌러 시작하세요');
   const [btnText, setBtnText] = useState<'시작하기' | '다른문제'>('시작하기');
+  const [history, setHistory] = useState<string[]>([]);
   const {
     handleInputChange,
     handleStart,
@@ -26,6 +27,7 @@ const App = () => {
     const questionNum = Math.ceil(Math.random() * MAX).toString();
 
     const data = JavaScript as TQuestion;
+    const newQuestion = data[questionNum].question;
 
     if (
       btnText === '시작하기' &&
@@ -33,7 +35,10 @@ const App = () => {
     ) {
       handleStart();
       setBtnText('다른문제');
-      setQuestion(data[questionNum].question);
+      setQuestion(newQuestion);
+    } else {
+      setHistory([...history, newQuestion]);
+      setQuestion(newQuestion);
     }
   };
 
@@ -51,9 +56,7 @@ const App = () => {
     };
   };
 
-  useEffect(() => {
-    disableScroll();
-  }, []);
+  useEffect(disableScroll, []);
 
   return (
     <div className='h-screen w-full bg-emerald-700 text-center p-10 md:py-20 flex flex-col'>
@@ -61,24 +64,30 @@ const App = () => {
         면접질문뽑기
       </h1>
       <div className='grid grid-cols-1 lg:grid-cols-[4fr_1fr] gap-2 lg:gap-8 lg:h-full md:px-20 2xl:px-40 font-GoormSansBold '>
-        <div className='bg-white rounded-xl px-4 py-9 relative flex flex-col justify-between items-center h-[250px] lg:h-auto'>
+        <div className='bg-white rounded-xl px-4 py-6 relative flex flex-col justify-between items-center h-[220px] lg:h-auto'>
           <div className='grow flex items-center justify-center text-2xl sm:text-3xl xl:text-4xl'>
             {question}
           </div>
           <button
             type='button'
-            className='w-56 sm:w-80 xl:w-96 2xl:w-[400px] rounded-full shadow-md bg-emerald-300 h-12 2xl:h-14 text-base sm:text-xl text-white'
+            className='w-56 sm:w-80 xl:w-96 2xl:w-[400px] rounded-full shadow-md bg-emerald-300 h-10 2xl:h-14 text-base sm:text-xl text-white'
             onClick={selectQuestion}
           >
             {btnText}
           </button>
         </div>
         <div className='lg:flex lg:flex-col'>
-          <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[120px] text-sm grow'>
+          <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[150px] text-sm grow'>
             <p className='xl:text-xl'>📒 기록 📒</p>
-            <ul className='grow px-3 w-full flex flex-col items-start justify-center lg:justify-start text-xs pt-3 bg-white m-1 lg:m-3 rounded-md'></ul>
+            <ul className='grow px-3 w-full flex flex-col items-start lg:justify-start text-xs pt-3 bg-white m-1 lg:m-3 rounded-md overflow-y-auto'>
+              {history.map((item, index) => (
+                <li key={index} className='mb-1'>
+                  🔹{item}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[120px] xl:h-[160px] text-sm mt-2 '>
+          <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[130px] xl:h-[160px] text-sm mt-2 '>
             <p className='xl:text-xl'>⏰ 타이머 ⏰</p>
             <div className='flex grow items-center lg:text-xl'>
               <input
