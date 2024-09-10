@@ -79,13 +79,15 @@ const App = () => {
         <div className='lg:flex lg:flex-col'>
           <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[150px] text-sm grow'>
             <p className='xl:text-xl'>📒 기록 📒</p>
-            <ul className='grow px-3 w-full flex flex-col items-start lg:justify-start text-xs pt-3 bg-white m-1 lg:m-3 rounded-md overflow-y-auto'>
-              {history.map((item, index) => (
-                <li key={index} className='mb-1'>
-                  🔹{item}
-                </li>
-              ))}
-            </ul>
+            <div className='w-full h-[100px] lg:grow overflow-y-auto bg-white m-1 lg:m-3 rounded-md'>
+              <ul className='px-3 w-full flex flex-col items-start lg:justify-start text-xs pt-3'>
+                {history.map((item, index) => (
+                  <li key={index} className='mb-1 text-start line-clamp-1'>
+                    🔹{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[130px] xl:h-[160px] text-sm mt-2 '>
             <p className='xl:text-xl'>⏰ 타이머 ⏰</p>
