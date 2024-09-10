@@ -1,33 +1,57 @@
 {
-  "1": { "question": "ES6에 추가된 문법", "sort": "JavaScript" },
-  "2": { "question": "`var`, `const`, `let`의 차이점", "sort": "JavaScript" },
-  "3": { "question": "`null`, `undefined`?", "sort": "JavaScript" },
-  "4": { "question": "`NaN`?", "sort": "JavaScript" },
+  "1": {
+    "question": "ES6에 추가된 문법에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "2": {
+    "question": "'var','const','let'의 차이점에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "3": {
+    "question": "'null', 'undefined' 의 차이점에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "4": { "question": "'NaN'이 무엇인가요?", "sort": "JavaScript" },
   "5": {
-    "question": "JS에서 세미콜론이 옵션인 이유에 대해 설명해주세요.",
+    "question": "JS에서 세미콜론이 옵션인 이유에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "6": { "question": "`Symbol`에 대해 설명해주세요.", "sort": "JavaScript" },
+  "6": { "question": "'Symbol'에 대해 설명해주세요", "sort": "JavaScript" },
   "7": {
-    "question": "`==` 과 `===` 의 차이가 무엇인가요?",
+    "question": "'==' 과 '===' 의 차이에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "8": { "question": "`for … of` / `for … in` 문", "sort": "JavaScript" },
-  "9": { "question": "`reduce` 사용법", "sort": "JavaScript" },
-  "10": { "question": "`splice`, `slice` 차이", "sort": "JavaScript" },
-  "11": { "question": "옵셔널 체이닝", "sort": "JavaScript" },
+  "8": {
+    "question": "'for … of'와 'for … in' 문의 차이에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "9": {
+    "question": "'reduce'사용법에 대해 알고있나요?",
+    "sort": "JavaScript"
+  },
+  "10": {
+    "question": "'splice'와 'slice' 차이점을 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "11": {
+    "question": "옵셔널 체이닝에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "12": {
-    "question": "NULL 병합 연산자(`??`)는 무엇인가요?",
+    "question": "NULL 병합 연산자('??')는 무엇인가요?",
     "sort": "JavaScript"
   },
-  "13": { "question": "단축평가", "sort": "JavaScript" },
+  "13": {
+    "question": "JS의 단축평가에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "14": {
-    "question": "Promise란 무엇이며, async/await과 어떻게 다른지, 왜 async/await이 등장했는지?\n Promise나 async/await를 es5로 트랜스파일하면 어떻게 되나요?",
+    "question": "Promise에 대해 설명해주세요",
     "sort": "JavaScript"
   },
   "15": { "question": "클로저(Closure)란 무엇인가요?", "sort": "JavaScript" },
   "16": {
-    "question": "구조 분해 할당(Destructuring assignment)이란?",
+    "question": "구조 분해 할당(Destructuring assignment)이 무엇인가요?",
     "sort": "JavaScript"
   },
   "17": { "question": "전개 구문(Spread syntax)이란?", "sort": "JavaScript" },
@@ -36,78 +60,116 @@
     "sort": "JavaScript"
   },
   "19": {
-    "question": "`use strict`가 무엇인가요? 장단점을 설명해주세요.",
+    "question": "'use strict'가 무엇인가요?",
     "sort": "JavaScript"
   },
   "20": {
-    "question": "`apply`, `call`, `bind`의 차이는 무엇인가요?`\n bind`를 `apply`, `call`로 어떻게 구현할 수 있을까요? 구현해보세요.",
+    "question": "'apply', 'call', 'bind'에 대해 설명해주세요",
     "sort": "JavaScript"
   },
   "21": {
-    "question": "함수 선언문, 함수 표현식, 화살표 함수의 차이에 대해 설명해주세요.",
+    "question": "함수 선언문, 함수 표현식, 화살표 함수의 차이에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "22": { "question": "익명 함수(anonymous function)?", "sort": "JavaScript" },
+  "22": {
+    "question": "익명 함수(anonymous function)에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "23": {
-    "question": "즉시 실행 함수 표현(IIFE, Immediately Invoked Function Expression)이란?",
+    "question": "즉시 실행 함수 표현(IIFE, Immediately Invoked Function Expression)이 무엇인가요?",
     "sort": "JavaScript"
   },
   "24": {
-    "question": "콜백함수와 콜백 지옥에 대해 설명해주세요.",
+    "question": "콜백함수와 콜백 지옥에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "25": { "question": "순수함수와 비순수함수", "sort": "JavaScript" },
-  "26": { "question": "고차함수에 대해 설명해주세요.", "sort": "JavaScript" },
-  "27": { "question": "일급객체란?", "sort": "JavaScript" },
-  "28": { "question": "`this`", "sort": "JavaScript" },
-  "29": { "question": "클래스", "sort": "JavaScript" },
-  "30": { "question": "불변성", "sort": "JavaScript" },
+  "25": {
+    "question": "순수함수와 비순수함수의 차이점을 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "26": { "question": "고차함수에 대해 설명해주세요", "sort": "JavaScript" },
+  "27": { "question": "일급객체가 무엇인가요?", "sort": "JavaScript" },
+  "28": {
+    "question": "'this'에 대해 아는대로 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "29": { "question": "클래스에 대해 알고있나요?", "sort": "JavaScript" },
+  "30": {
+    "question": "자바스크립트에서 불변성은 무엇을 의미할까요?",
+    "sort": "JavaScript"
+  },
   "31": {
-    "question": "자바스크립트 자료형 중에 객체와 다른 타입 간의 차이가 있을까?",
+    "question": "자바스크립트 자료형 중에 객체와 다른 타입 간의 차이가 있을까요?",
     "sort": "JavaScript"
   },
   "32": {
-    "question": "프로토타입이란 무엇인가요? 장단점과 실 사용 예시",
+    "question": "프로토타입이란 무엇인가요?",
     "sort": "JavaScript"
   },
-  "33": { "question": "(Weak)Map vs. (Weak)Set", "sort": "JavaScript" },
-  "34": { "question": "`Date` 객체", "sort": "JavaScript" },
-  "35": { "question": "얕은 복사와 깊은 복사의 차이", "sort": "JavaScript" },
+  "33": {
+    "question": "(Weak)Map과 (Weak)Set에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "34": {
+    "question": "'Date' 객체를 사용해본적이 있나요?",
+    "sort": "JavaScript"
+  },
+  "35": {
+    "question": "얕은 복사와 깊은 복사의 차이점에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "36": {
-    "question": "문(statement)과 표현식(expression)의 차이",
+    "question": "문(statement)과 표현식(expression)의 차이점에 대해 설명해주세요",
     "sort": "JavaScript"
   },
   "37": {
     "question": "JavaScript Module System과 Dynamic import?",
     "sort": "JavaScript"
   },
-  "38": { "question": "node.js와 그냥 js의 차이", "sort": "JavaScript" },
-  "39": {
-    "question": "iterable, iterator, 유사 배열 객체",
+  "38": {
+    "question": "node.js와 그냥 js의 차이점에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "40": { "question": "generator", "sort": "JavaScript" },
+  "39": {
+    "question": "유사 배열 객체에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "40": { "question": "generator에 대해 설명해주세요", "sort": "JavaScript" },
   "41": { "question": "polyfill이란 무엇인가요?", "sort": "JavaScript" },
-  "42": { "question": "자바스크립트 엔진의 동작 방법", "sort": "JavaScript" },
+  "42": {
+    "question": "자바스크립트 엔진의 동작 방법에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "43": {
-    "question": "이벤트 루프 Task queue란? (Micro vs. Macro) 자바스크립트는 싱글 스레드 기반인데 어떻게 비동기 처리를 할 수 있나요?",
+    "question": "이벤트 루프와 Task queue에 대해 설명해주세요",
     "sort": "JavaScript"
   },
   "44": {
-    "question": "호이스팅(hoisting)에 대해 설명해주세요.",
+    "question": "호이스팅(hoisting)에 대해 설명해주세요",
     "sort": "JavaScript"
   },
-  "45": { "question": "실행 컨텍스트", "sort": "JavaScript" },
+  "45": {
+    "question": "실행 컨텍스트에 대해 설명해주세요",
+    "sort": "JavaScript"
+  },
   "46": {
-    "question": "스코프, 스코프 체인, 스코프 체이닝, 렉시컬 스코프, 블록 레벨 스코프, 함수 레벨 스코프",
+    "question": "스코프에 대해 아는대로 설명해주세요",
     "sort": "JavaScript"
   },
   "47": {
-    "question": "JS의 가비지 컬렉션(GC)에 대해 설명해주세요.",
+    "question": "JS의 가비지 컬렉션(GC)에 대해 설명해주세요",
     "sort": "JavaScript"
   },
   "48": {
-    "question": "배열에 값을 추가/삭제했을 때 메모리가 어떻게 변화하는지 과정을 설명해주세요.",
+    "question": "배열에 값을 추가/삭제했을 때 메모리가 어떻게 변화하는지 과정을 설명해주세요",
+    "sort": "JavaScript"
+  },
+  "49": {
+    "question": "자바스크립트는 싱글 스레드 기반인데 어떻게 비동기 처리를 할 수 있나요?",
+    "sort": "JavaScript"
+  },
+  "50": {
+    "question": "블록 레벨 스코프와 함수 레벨 스코프의 차이점에 대해 설명해주세요.",
     "sort": "JavaScript"
   }
 }
