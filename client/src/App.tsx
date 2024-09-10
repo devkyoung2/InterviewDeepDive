@@ -65,7 +65,7 @@ const App = () => {
       </h1>
       <div className='grid grid-cols-1 lg:grid-cols-[4fr_1fr] gap-2 lg:gap-8 lg:h-full md:px-20 2xl:px-40 font-GoormSansBold '>
         <div className='bg-white rounded-xl px-4 py-6 relative flex flex-col justify-between items-center h-[220px] lg:h-auto'>
-          <div className='grow flex items-center justify-center text-2xl sm:text-3xl xl:text-4xl'>
+          <div className='grow flex items-center justify-center text-2xl sm:text-3xl lg:px-10 xl:text-4xl'>
             {question}
           </div>
           <button
@@ -80,7 +80,7 @@ const App = () => {
           <div className='flex flex-col items-center bg-emerald-100 rounded-xl p-4 h-[150px] text-sm grow'>
             <p className='xl:text-xl'>📒 기록 📒</p>
             <div className='w-full h-[100px] lg:grow overflow-y-auto bg-white m-1 lg:m-3 rounded-md'>
-              <ul className='px-3 w-full flex flex-col items-start lg:justify-start text-xs pt-3'>
+              <ul className='px-3 w-full flex flex-col items-start lg:justify-start text-xs xl:text-sm pt-3'>
                 {history.map((item, index) => (
                   <li key={index} className='mb-1 text-start line-clamp-1'>
                     🔹{item}
