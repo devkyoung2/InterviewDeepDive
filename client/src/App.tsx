@@ -29,17 +29,14 @@ const App = () => {
     const data = JavaScript as TQuestion;
     const newQuestion = data[questionNum].question;
 
-    if (
-      btnText === '시작하기' &&
-      inputMinutes.length + inputSeconds.length > 0
-    ) {
+    if (inputMinutes.length + inputSeconds.length === 0) return;
+
+    if (btnText === '시작하기') {
       handleStart();
       setBtnText('다른문제');
-      setQuestion(newQuestion);
-    } else {
-      setHistory([...history, newQuestion]);
-      setQuestion(newQuestion);
     }
+    setHistory([...history, newQuestion]);
+    setQuestion(newQuestion);
   };
 
   const disableScroll = () => {
