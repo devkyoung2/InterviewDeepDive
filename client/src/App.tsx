@@ -23,7 +23,7 @@ const App = () => {
   } = timer();
 
   const selectQuestion = () => {
-    const MAX = 20;
+    const MAX = 34;
     const questionNum = Math.ceil(Math.random() * MAX).toString();
 
     const data = JavaScript as TQuestion;
