@@ -6,8 +6,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "dev:client": "pnpm --prefix client run dev",
     "dev:server": "pnpm --prefix server run dev",
     "dev": "concurrently \"pnpm dev:client\" \"pnpm dev:server\""
