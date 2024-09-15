@@ -1,9 +1,12 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import Dotenv from 'dotenv-webpack';
-const PORT = 3000;
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   mode: 'development',
   entry: './src/index.tsx',
   output: {
@@ -11,9 +14,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
+    static: './dist',
     host: '0.0.0.0',
-    port: PORT,
-    allowedHosts: 'all',
+    port: 3000,
+    hot: 'only',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -21,14 +25,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(j|t)sx?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
-      {
-        test: /\.ts$/,
-        exclude: /node_modules/,
-        use: ['ts-loader'],
+        use: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.css$/,
