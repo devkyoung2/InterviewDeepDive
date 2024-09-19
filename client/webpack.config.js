@@ -1,17 +1,30 @@
-const dotenv = require('dotenv');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const dotenv = require('dotenv');
+const fs = require('fs');
 const PORT = 3000;
 
-// .env 파일 로드
-const env = dotenv.config().parsed;
+// 환경 변수 설정
+let envKeys = {};
 
-// 환경 변수를 객체로 변환
-const envKeys = Object.keys(env).reduce((prev, next) => {
-  prev[`process.env.${next}`] = JSON.stringify(env[next]);
-  return prev;
-}, {});
+if (process.env.VERCEL) {
+  envKeys = Object.keys(process.env).reduce((prev, key) => {
+    prev[`process.env.${key}`] = JSON.stringify(process.env[key]);
+    return prev;
+  }, {});
+} else {
+  const currentPath = path.join(__dirname);
+  const basePath = currentPath + '/.env';
+  const envPath = basePath + '.' + process.env.NODE_ENV;
+  const finalPath = fs.existsSync(envPath) ? envPath : basePath;
+
+  const fileEnv = dotenv.config({ path: finalPath }).parsed;
+  envKeys = Object.keys(fileEnv).reduce((prev, next) => {
+    prev[`process.env.${next}`] = JSON.stringify(fileEnv[next]);
+    return prev;
+  }, {});
+}
 
 module.exports = {
   mode: 'development',
