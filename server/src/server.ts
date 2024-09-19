@@ -1,4 +1,5 @@
 import CONFIG from './config';
+import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 import mongoose from 'mongoose';
@@ -8,6 +9,16 @@ const app = express();
 
 app.use(express.json());
 app.use(helmet());
+
+app.use(
+  cors({
+    origin: [
+      'https://interview-deep-dive.vercel.app/',
+      'http://localhost:3000',
+    ],
+    Credential: true,
+  })
+);
 
 // 중앙 라우터 설정
 app.use('/api', router);
