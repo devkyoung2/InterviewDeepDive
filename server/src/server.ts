@@ -1,6 +1,5 @@
 import cors from 'cors';
 import CONFIG from './config';
-import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 import mongoose from 'mongoose';
@@ -22,7 +21,6 @@ app.use(
       'https://interview-deep-dive.vercel.app/',
       'http://localhost:3000',
     ],
-    Credential: true,
   })
 );
 
