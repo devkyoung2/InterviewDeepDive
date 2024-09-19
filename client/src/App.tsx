@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import JavaScript from '../assets/JavaScript.json';
 import timer from './Timer';
+import api from './axios';
 
 type TQuestion = {
-  [key: string]: {
-    question: string;
-    sort: string;
-  };
+  question: string;
+  category: string;
 };
 
 const App = () => {
@@ -22,21 +20,24 @@ const App = () => {
     isRunning,
   } = timer();
 
-  const selectQuestion = () => {
-    const MAX = 34;
-    const questionNum = Math.ceil(Math.random() * MAX).toString();
-
-    const data = JavaScript as TQuestion;
-    const newQuestion = data[questionNum].question;
-
-    if (inputMinutes.length + inputSeconds.length === 0) return;
-
-    if (btnText === '시작하기') {
-      handleStart();
-      setBtnText('다른문제');
+  const selectQuestion = async () => {
+    if (inputMinutes.length + inputSeconds.length === 0) {
+      alert('시간을 입력해주세요!');
+      return;
     }
-    setHistory([...history, newQuestion]);
-    setQuestion(newQuestion);
+
+    try {
+      const { data } = await api.get<TQuestion>('/random-question');
+      const newQuestion = data.question;
+      if (btnText === '시작하기') {
+        handleStart();
+        setBtnText('다른문제');
+      }
+      setHistory([...history, newQuestion]);
+      setQuestion(newQuestion);
+    } catch (error) {
+      console.error('질문을 가져오는 중 오류 발생:', error);
+    }
   };
 
   const disableScroll = () => {
