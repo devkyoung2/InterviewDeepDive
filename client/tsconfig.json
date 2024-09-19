@@ -13,6 +13,6 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true
   },
-  "include": ["client/src/**/*"],
+  "include": ["src/"],
   "exclude": ["node_modules"]
 }
