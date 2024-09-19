@@ -1,7 +1,17 @@
+const dotenv = require('dotenv');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PORT = 3000;
+
+// .env 파일 로드
+const env = dotenv.config().parsed;
+
+// 환경 변수를 객체로 변환
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
 
 module.exports = {
   mode: 'development',
@@ -44,8 +54,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env),
-    }),
+    new webpack.DefinePlugin(envKeys),
   ],
 };
