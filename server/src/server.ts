@@ -1,3 +1,4 @@
+import cors from 'cors';
 import CONFIG from './config';
 import cors from 'cors';
 import express from 'express';
@@ -9,6 +10,11 @@ const app = express();
 
 app.use(express.json());
 app.use(helmet());
+app.use(
+  cors({
+    origin: ['https://interview-deep-dive.vercel.app', 'http://localhost:3000'],
+  })
+);
 
 app.use(
   cors({
