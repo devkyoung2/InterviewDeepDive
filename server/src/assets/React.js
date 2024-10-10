@@ -1,4 +1,4 @@
-const questionsData = [
+export const React = [
   {
     question: '여러 개발 툴 중 React를 사용하는 이유?',
     category: 'React',

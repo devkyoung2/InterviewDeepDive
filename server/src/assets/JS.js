@@ -1,4 +1,4 @@
-const questionsData = [
+const JavaScript = [
   { question: 'ES6에 추가된 문법에 대해 설명해주세요', category: 'JavaScript' },
   {
     question: "'var','const','let'의 차이점에 대해 설명해주세요",
