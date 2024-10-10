@@ -17,4 +17,4 @@ const QuestionSchema = new mongoose.Schema<IQuestion>(
 
 QuestionSchema.index({ category: 1 });
 
-export default mongoose.model('Question', QuestionSchema);
+export default mongoose.model('StudyFor1010', QuestionSchema);
